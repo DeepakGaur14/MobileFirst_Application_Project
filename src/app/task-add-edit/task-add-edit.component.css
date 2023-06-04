@@ -1,0 +1,27 @@
+.content{
+    padding: 10px;
+}
+.row{
+    display: flex;
+    gap: 10px;
+}
+
+.action{
+    display: flex;
+    gap: 20px;
+}
+
+.cancel_button{
+    width: 50%;
+    margin-left: 10px;
+}
+
+.save_button{
+    width: 40%;
+}
+
+.small-text{
+    font-size: 0.6rem;
+    display: list-item;
+    color: rgba(255, 0, 0, 0.596);
+}
