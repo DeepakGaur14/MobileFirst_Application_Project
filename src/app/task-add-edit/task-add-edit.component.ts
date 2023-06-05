@@ -38,7 +38,7 @@ export class TaskAddEditComponent implements OnInit {
       if(this.data){
       return this.tasksService.updateTasks(this.data.id, this.taskForm.value).subscribe({
         next: (val: any) => {
-          this.toastr.showSuccess('Successfully Logged In ', 'Success');
+          this.toastr.showSuccess('Successfully Updated ', 'Success');
           this.dialogref.close(true);
         },
       });
@@ -47,7 +47,7 @@ export class TaskAddEditComponent implements OnInit {
     else {
       return this.tasksService.addTasks(this.taskForm.value).subscribe({
         next: (val: any) => {
-          this.toastr.showSuccess('Successfully Logged In ', 'Success');
+          this.toastr.showSuccess('Successfully Added ', 'Success');
           this.dialogref.close(true);
         },
       });

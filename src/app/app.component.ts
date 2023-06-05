@@ -58,7 +58,7 @@ export class AppComponent implements OnInit{
   deleteFromTaskList(id:number){
     this.taskservice.deleteFromTaskList(id).subscribe({
       next: (res) => {
-        this.toastr.showSuccess('Successfully Logged In ', 'Success');
+        this.toastr.showSuccess(' Yo have successfully Deleted The Task ', 'Success');
         this.getTasksList();
       },
       error(err){
